@@ -1,0 +1,263 @@
+body {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-color: #0d0d0d;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+    padding-top: 50px;
+}
+
+.profile-pic {
+    width: 300px;  /* Increase size */
+    height: 300px; /* Keep it square */
+    border-radius: 10px; /* No circular edges */
+    border: 4px solid #322f2f2c;
+    box-shadow: 0 0 15px #4d5150;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+/* Project Section */
+#projects {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Ensure project cards are aligned & same width */
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px; /* Increased to match other sections */
+    margin: auto;
+    width: 100%;
+}
+
+/* Expanded Project Cards */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 900px; /* Matches experience & skills sections */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Project Cards */
+.project-card:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Project Title Styling */
+.project-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e2ebea;
+}
+
+/* Project Description Styling */
+.project-card p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ddd;
+}
+
+.contact-icons a {
+    color: #3f5898;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+.contact-icons a:hover {
+    text-shadow: 0 0 10px #08FDD8, 0 0 20px #08FDD8;
+}
+/* New sections for testimonials and skills */
+#skills, #testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+/* Center the skills section */
+#skills {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Center the sections */
+#skills, #experience, #languages {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Skills & Programming Languages - Grid Layout */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Aesthetic Skill Cards */
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Experience Section */
+#experience {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Experience Cards Container */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px; /* Increased to match other sections */
+    margin: auto;
+    width: 100%;
+}
+
+/* Expanded Experience Cards */
+.experience-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 900px; /* Increased to match the layout */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Experience Cards */
+.experience-card:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Skills Section */
+#skills, #languages {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Programming Languages & Skills - Wider Grid */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ensures alignment */
+    gap: 20px;
+    max-width: 900px; /* Matches experience card width */
+    margin: auto;
+}
+
+/* Skill Cards */
+.skill-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Skills */
+.skill-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+/* About Me Section */
+#about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* About Me Container - Matches the width of Project & Experience Sections */
+.about-container {
+    max-width: 900px; /* Ensures the width matches other sections */
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+    text-align: justify; /* Makes text look well-structured */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05); /* Subtle background to match design */
+    border-radius: 10px;
+}
+/* Responsive Design - Mobile Fixes */
+@media (max-width: 768px) {
+    /* Fix width for smaller screens */
+    .container-wide, .project-grid, .experience-container, .skills-container {
+        max-width: 90%; /* Reduce width to fit mobile screens */
+    }
+
+    /* Adjust font sizes for readability */
+    .neon-text {
+        font-size: 36px; /* Reduce name size on mobile */
+    }
+
+    .subheading {
+        font-size: 18px; /* Reduce subheading size */
+    }
+
+    /* Adjust profile image */
+    .profile-pic {
+        width: 200px;  /* Smaller profile pic for mobile */
+        height: 200px;
+    }
+
+    /* Stack project/experience cards vertically */
+    .project-card, .experience-card {
+        padding: 15px; /* Reduce padding */
+        font-size: 16px; /* Adjust text size */
+    }
+
+    /* Make skill grid items flexible */
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    /* Adjust About Me section */
+    .about-container {
+        text-align: center; /* Center text for better readability */
+        font-size: 16px;
+        padding: 15px;
+    }
+}
